@@ -23,7 +23,6 @@ h2 {
 }
 a {
   text-decoration: none;
-  color: inherit !important;
 }
 
 .page {
@@ -48,11 +47,13 @@ a {
   padding-bottom: 10px;
 }
 
-.link:hover {
+.link {
   color: #000;
-  text-decoration: underline;
-  font-weight: 600;
 }
+.link:hover {
+  border-bottom: 3px solid #000;
+}
+
 .selectionby {
   color: #888;
 }
