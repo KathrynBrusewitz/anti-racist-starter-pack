@@ -482,6 +482,10 @@ const DOCUMENTARIES = [
     url: `https://www.youtube.com/watch?v=Gh7c46U5hhY`,
   },
   {
+    title: `The Black Panthers: Vanguard of the Revolution`,
+    url: `https://itunes.apple.com/us/movie/black-panthers-vanguard-of-the-revolution/id1052857558`
+  },
+  {
     title: `Slavery by Another Name`,
     url: `https://www.youtube.com/watch?v=UcCxsLDma2o`,
   },
@@ -499,10 +503,14 @@ const DOCUMENTARIES = [
       "https://itunes.apple.com/us/movie/through-lens-darkly-black-photographers-emergence-people/id961838434",
   },
   {
+    title: `Jerusalem's Afro-Palestinians`,
+    url: `http://www.aparchive.com/metadata/youtube/e2fc3c7e2cf7ff46742bb1bcabd5e31d`
+  },
+  {
     title: `Louisiana State Super-max Prison Farm (Angola) - The "Alcatraz of the South"`,
     url:
-      "https://www.dailymotion.com/video/x61j957",
-  },
+      `https://www.dailymotion.com/video/x61j957`,
+  }
 ];
 
 document.getElementById(
