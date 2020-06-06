@@ -47,24 +47,29 @@ a {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-/* .link {
-  color: inherit;
-} */
+
 .link:hover {
   color: #000;
   text-decoration: underline;
   font-weight: 600;
 }
 .selectionby {
-  color: #777;
-  display: inline-block;
+  color: #888;
+}
+.selectionbylink {
+  color: #888;
+}
+.contributionsby {
+  color: #888;
+  font-size: 92%;
 }
 .builtby {
-  color: #777;
+  color: #888 !important;
   display: inline-block;
   margin-top: 100px;
+  font-size: 90%;
 }
-.selectionby:hover,
+.selectionbylink:hover,
 .builtby:hover {
   text-decoration: underline;
 }
