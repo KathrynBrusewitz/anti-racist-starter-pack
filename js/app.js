@@ -86,7 +86,7 @@ const booksData = [
     title:
       "Seize the Time: The Story of the Black Panther Party and Huey P. Newton",
     author: "Bobby Seale",
-    url: "",
+    url: "https://pyramidbooks.indielite.org/book/9780933121300",
   },
   {
     title: "The Denial of Antiblackness",
