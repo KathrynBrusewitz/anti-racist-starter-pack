@@ -406,3 +406,72 @@ document.getElementById("podcasts").innerHTML = PODCASTS.map((item) => {
   const author = item.author ? ` - ${item.author}` : ``;
   return `<div class="item"><a class="link" href="${item.url}" target="_blank"><b>${item.title}</b>${author}</a></div>`;
 }).join("");
+
+const INTERVIEWS_LECTURES = [
+  {
+    title: `How standardized tests were designed by racists and eugenicists`,
+    author: `Democracy Now`,
+    url: `https://www.youtube.com/watch?v=SwYiOrq5c8s`,
+  },
+  {
+    title: `Dr. Robin DiAngelo discusses 'White Fragility'`,
+    author: `Seattle Channel`,
+    url: `https://www.youtube.com/watch?v=45ey4jgoxeU`,
+  },
+  {
+    title: `Explained | Racial Wealth Gap`,
+    author: `Netflix and Vox Media`,
+    url: `https://www.youtube.com/watch?v=Mqrhn8khGLM`,
+  },
+  {
+    title: `What a School Means: A Conversation with Eve L. Ewing`,
+    author: `Haymarket Books`,
+    url: `https://www.haymarketbooks.org/blogs/154-what-a-school-means-a-conversation-with-eve-l-ewing`,
+  },
+  {
+    title: `Toni Morrison, what racism is`,
+    author: `Charlie Rose`,
+    url: `https://www.youtube.com/watch?v=6S7zGgL6Suw`,
+  },
+  {
+    title: `Angela Davis and Toni Morrison Literacy, Libraries and Liberation`,
+    url: `https://www.youtube.com/watch?v=zLR_TcGHzRU`,
+  },
+  {
+    title: `Author James Baldwin On Being Black In America 1960`,
+    author: "CBC Archives",
+    url: `https://www.cbc.ca/player/play/728074819742`,
+  },
+  {
+    title: `COLONIAL REPERCUSSIONS - Angela Davis and Gayatri Chakravorty Spivak: Planetary Utopias`,
+    author: `Akademie der Künste, Berlin`,
+    url: `https://www.youtube.com/watch?v=cc-nGN07gnk`,
+  },
+  {
+    title: `White Rage: The Unspoken Truth of Our Nation's Divide`,
+    author: `Emory University`,
+    url: `https://www.youtube.com/watch?v=YBYUET24K1c`,
+  },
+  {
+    title: `The Case for Prison Abolition: Ruth Wilson Gilmore on COVID-19, Racial Capitalism & Decarceration`,
+    author: `Democracy Now`,
+    url: `https://www.youtube.com/watch?v=1HWqYANmWLY`,
+  },
+  {
+    title: `Compassionate Communities Emergent Strategy: Shaping Change, Changing Worlds`,
+    author: `Engaging Voices`,
+    url: `https://www.youtube.com/watch?v=h-sCy8SzvHY`,
+  },
+  {
+    title: `Arundhati Roy: "The Pandemic is a Portal"`,
+    author: `Haymarket Books`,
+    url: `https://www.haymarketbooks.org/blogs/130-arundhati-roy-the-pandemic-is-a-portal`,
+  },
+];
+
+document.getElementById(
+  "interviews_lectures"
+).innerHTML = INTERVIEWS_LECTURES.map((item) => {
+  const author = item.author ? ` - ${item.author}` : ``;
+  return `<div class="item"><a class="link" href="${item.url}" target="_blank"><b>${item.title}</b>${author}</a></div>`;
+}).join("");
