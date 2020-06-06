@@ -234,8 +234,8 @@ const articlesData = [
     url: `https://www.newyorker.com/news/our-columnists/the-black-plague`,
   },
   {
-    title: `The school to prison pipeline, explained – Thoughtco`,
-    author: ``,
+    title: `The school to prison pipeline, explained`,
+    author: `Nicki Lisa Cole, Ph.D.`,
     url: `https://www.thoughtco.com/school-to-prison-pipeline-4136170`,
   },
   {
