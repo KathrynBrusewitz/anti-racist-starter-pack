@@ -7,12 +7,12 @@ const booksData = [
   },
   {
     title: "There There",
-    author: "Tommy Orange ",
+    author: "Tommy Orange",
     url: "https://bookshop.org/books/there-there-9780525436140/9780525436140",
   },
   {
     title: "The Origin of Others",
-    author: "Toni Morrison ",
+    author: "Toni Morrison",
     url: "https://bookshop.org/books/the-origin-of-others/9780674976450",
   },
   {
@@ -22,13 +22,13 @@ const booksData = [
   },
   {
     title: "Race Matters",
-    author: "Cornel West ",
+    author: "Cornel West",
     url: "https://www.esowonbookstore.com/book/9780807008836",
   },
   {
     title:
       "Ghosts in the Schoolyard: Racism and School Closings on Chicago's South Side",
-    author: "Eve L. Ewing ",
+    author: "Eve L. Ewing",
     url:
       "https://bookshop.org/books/ghosts-in-the-schoolyard-racism-and-school-closings-on-chicago-s-south-side/9780226526027",
   },
@@ -39,12 +39,12 @@ const booksData = [
   },
   {
     title: "How to Be an Anti-Racist",
-    author: "Ibram X. Kendi ",
+    author: "Ibram X. Kendi",
     url: "https://www.mahoganybooks.com/9780525509288",
   },
   {
     title: "Between the World and Me",
-    author: "Ta-Nehisi Coates ",
+    author: "Ta-Nehisi Coates",
     url: "https://www.blackstonebookstore.com/book/9780812993547",
   },
   {
@@ -69,7 +69,7 @@ const booksData = [
   },
   {
     title: "Who We Be: The Colorization of America",
-    author: "Jeff Chang ",
+    author: "Jeff Chang",
     url: "https://www.blackstonebookstore.com/book/9781250074898",
   },
   {
@@ -90,7 +90,7 @@ const booksData = [
   },
   {
     title: "The Denial of Antiblackness",
-    author: "João H. Costa Vargas ",
+    author: "João H. Costa Vargas",
     url:
       "https://www.upress.umn.edu/book-division/books/the-denial-of-antiblackness",
   },
@@ -117,7 +117,7 @@ const booksData = [
   },
   {
     title: "The Fire Next Time",
-    author: "James Baldwin ",
+    author: "James Baldwin",
     url: "https://www.blackstonebookstore.com/book/9780679744726",
   },
   {
@@ -127,12 +127,12 @@ const booksData = [
   },
   {
     title: "Southern Horrors",
-    author: "Ida B. Wells ",
+    author: "Ida B. Wells",
     url: "https://www.blackstonebookstore.com/book/9781515106685",
   },
   {
     title: "Black Skin, White Masks",
-    author: "Franz Fanon ",
+    author: "Franz Fanon",
     url:
       "http://abahlali.org/files/__Black_Skin__White_Masks__Pluto_Classics_.pdf",
   },
@@ -148,7 +148,7 @@ const booksData = [
   },
   {
     title: "Women, Race & Class",
-    author: "Angela Davis ",
+    author: "Angela Davis",
     url: "https://www.blackstonebookstore.com/book/9781556520747",
   },
   {
@@ -160,7 +160,7 @@ const booksData = [
   },
   {
     title: "Stamped from the Beginning",
-    author: "Ibram X. Kendi ",
+    author: "Ibram X. Kendi",
     url: "https://www.mahoganybooks.com/9781568584638",
   },
   {
