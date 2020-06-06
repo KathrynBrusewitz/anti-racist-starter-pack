@@ -491,7 +491,7 @@ const DOCUMENTARIES = [
   },
   {
     title: `LA 92`,
-    url: `https://www.netflix.com/watch/80184131?trackId=13752289&tctx=0%2C0%2Ca3765ac0-e702-4089-a547-4b8af4958f18-45861383%2C%2C%2C`,
+    url: `https://www.netflix.com/watch/80184131?source=35`,
   },
   {
     title: `Through a Lens Darkly: Black Photographers and The Emergence of a People`,
