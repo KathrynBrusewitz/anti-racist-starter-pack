@@ -1,4 +1,4 @@
-const booksData = [
+const BOOKS = [
   {
     title: "Teaching to Transgress",
     author: "Bell Hooks",
@@ -192,18 +192,12 @@ const booksData = [
   },
 ];
 
-const booksSection = document.getElementById("books");
+document.getElementById("books").innerHTML = BOOKS.map(
+  (item) =>
+    `<div class="item"><a class="link" href="${item.url}" target="_blank"><b>${item.title}</b> by ${item.author}</a></div>`
+).join("");
 
-const booksHTML = booksData
-  .map(
-    (item) =>
-      `<div class="item"><a class="link" href="${item.url}" target="_blank"><b>${item.title}</b> by ${item.author}</a></div>`
-  )
-  .join("");
-
-booksSection.innerHTML = booksHTML;
-
-const articlesData = [
+const ARTICLES = [
   {
     title: `From Most Hated to American Hero: The Whitewashing of Martin Luther King Jr.`,
     author: `Michael Harriot`,
@@ -355,11 +349,60 @@ const articlesData = [
   },
 ];
 
-const articlesSection = document.getElementById("articles");
+document.getElementById("articles").innerHTML = ARTICLES.map((item) => {
+  const author = item.author ? ` by ${item.author}` : ``;
+  return `<div class="item"><a class="link" href="${item.url}" target="_blank"><b>${item.title}</b>${author}</a></div>`;
+}).join("");
 
-articlesSection.innerHTML = articlesData
-  .map((item) => {
-    const author = item.author ? ` by ${item.author}` : ``;
-    return `<div class="item"><a class="link" href="${item.url}" target="_blank"><b>${item.title}</b>${author}</a></div>`;
-  })
-  .join("");
+const PODCASTS = [
+  {
+    title: `A Decade Of Watching Black People Die (episode)`,
+    author: `Code Switch/NPR`,
+    url: `https://www.npr.org/2020/05/29/865261916/a-decade-of-watching-black-people-die`,
+  },
+  {
+    title: `Black Mothers Keep Dying After Giving Birth. Shalon Irving's Story Explains Why`,
+    author: `All Things Considered`,
+    url: `https://www.npr.org/2017/12/07/568948782/black-mothers-keep-dying-after-giving-birth-shalon-irvings-story-explains-why`,
+  },
+  {
+    title: `Still processing`,
+    author: `Jenna Wortham and Wesley Morris`,
+    url: `https://www.nytimes.com/column/still-processing-podcast`,
+  },
+  {
+    title: `Code Switch`,
+    author: `NPR`,
+    url: `https://www.npr.org/sections/codeswitch/`,
+  },
+  {
+    title: `1619 Project`,
+    author: `New York Times`,
+    url: `https://www.nytimes.com/interactive/2019/08/14/magazine/1619-america-slavery.html`,
+  },
+  {
+    title: `Justice in America`,
+    author: `The Appeal`,
+    url: `https://theappeal.org/tag/justice-in-america/`,
+  },
+  {
+    title: `Zipcode Destiny (episode)`,
+    author: `Hidden Brain`,
+    url: `https://www.npr.org/2018/11/12/666993130/zipcode-destiny-the-persistent-power-of-place-and-education`,
+  },
+  {
+    title: `Intersectionality Matters!`,
+    author: `Dr. Kimberlé Crenshaw`,
+    url: `https://aapf.org/podcast`,
+  },
+  {
+    title: `All My Relations`,
+    author: `Dr. Adrienne Keene and Matika Wilbur`,
+    url: `https://www.allmyrelationspodcast.com/who-we-are`,
+  },
+];
+
+document.getElementById("podcasts").innerHTML = PODCASTS.map((item) => {
+  const author = item.author ? ` - ${item.author}` : ``;
+  return `<div class="item"><a class="link" href="${item.url}" target="_blank"><b>${item.title}</b>${author}</a></div>`;
+}).join("");
