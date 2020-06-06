@@ -475,3 +475,38 @@ document.getElementById(
   const author = item.author ? ` - ${item.author}` : ``;
   return `<div class="item"><a class="link" href="${item.url}" target="_blank"><b>${item.title}</b>${author}</a></div>`;
 }).join("");
+
+const DOCUMENTARIES = [
+  {
+    title: `Black in Latin America E02, Brazil: A Racial Paradise`,
+    url: `https://www.youtube.com/watch?v=Gh7c46U5hhY`,
+  },
+  {
+    title: `Slavery by Another Name`,
+    url: `https://www.youtube.com/watch?v=UcCxsLDma2o`,
+  },
+  {
+    title: `A Time for Burning`,
+    url: `https://www.youtube.com/watch?v=ujw_KJzTF8k`,
+  },
+  {
+    title: `LA 92`,
+    url: `https://www.netflix.com/watch/80184131?trackId=13752289&tctx=0%2C0%2Ca3765ac0-e702-4089-a547-4b8af4958f18-45861383%2C%2C%2C`,
+  },
+  {
+    title: `Through a Lens Darkly: Black Photographers and The Emergence of a People`,
+    url:
+      "https://itunes.apple.com/us/movie/through-lens-darkly-black-photographers-emergence-people/id961838434",
+  },
+  {
+    title: `Louisiana State Super-max Prison Farm (Angola) - The "Alcatraz of the South"`,
+    url:
+      "https://www.dailymotion.com/video/x61j957",
+  },
+];
+
+document.getElementById(
+  "documentaries"
+).innerHTML = DOCUMENTARIES.map((item) => {
+  return `<div class="item"><a class="link" href="${item.url}" target="_blank"><b>${item.title}</b></a></div>`;
+}).join("");
