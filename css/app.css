@@ -46,11 +46,13 @@ a {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.external-link {
-  color: #3faf44;
+.link {
+  color: inherit;
 }
-.external-link:hover {
-  color: #4ad351;
+.link:hover {
+  color: #000;
+  text-decoration: underline;
+  font-weight: 600;
 }
 .selectionby {
   color: #777;
