@@ -23,7 +23,7 @@ h2 {
 }
 a {
   text-decoration: none;
-  color: inherit;
+  color: inherit !important;
 }
 
 .page {
@@ -47,9 +47,9 @@ a {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.link {
+/* .link {
   color: inherit;
-}
+} */
 .link:hover {
   color: #000;
   text-decoration: underline;
