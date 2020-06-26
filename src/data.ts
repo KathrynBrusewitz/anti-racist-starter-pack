@@ -1,4 +1,4 @@
-const BOOKS = [
+export const BOOKS = [
   {
     title: "Teaching to Transgress",
     author: "Bell Hooks",
@@ -176,7 +176,7 @@ const BOOKS = [
   },
   {
     title:
-      "Fumbling Towards Repair: A Workbook for Community Accountability Facilitators",
+      "Fumbling Towards Repair: A Workbook for Community Accountability Facilitators",
     author: "Mariame Kaba and Shira Hassan",
     url: "https://www.blackstonebookstore.com/book/9781939202321",
   },
@@ -192,12 +192,7 @@ const BOOKS = [
   },
 ];
 
-document.getElementById("books").innerHTML = BOOKS.map(
-  (item) =>
-    `<div class="item"><a class="link" href="${item.url}" target="_blank"><b>${item.title}</b> by ${item.author}</a></div>`
-).join("");
-
-const ARTICLES = [
+export const ARTICLES = [
   {
     title: `From Most Hated to American Hero: The Whitewashing of Martin Luther King Jr.`,
     author: `Michael Harriot`,
@@ -349,12 +344,7 @@ const ARTICLES = [
   },
 ];
 
-document.getElementById("articles").innerHTML = ARTICLES.map((item) => {
-  const author = item.author ? ` by ${item.author}` : ``;
-  return `<div class="item"><a class="link" href="${item.url}" target="_blank"><b>${item.title}</b>${author}</a></div>`;
-}).join("");
-
-const PODCASTS = [
+export const PODCASTS = [
   {
     title: `A Decade Of Watching Black People Die (episode)`,
     author: `Code Switch/NPR`,
@@ -402,12 +392,7 @@ const PODCASTS = [
   },
 ];
 
-document.getElementById("podcasts").innerHTML = PODCASTS.map((item) => {
-  const author = item.author ? ` - ${item.author}` : ``;
-  return `<div class="item"><a class="link" href="${item.url}" target="_blank"><b>${item.title}</b>${author}</a></div>`;
-}).join("");
-
-const INTERVIEWS_LECTURES = [
+export const INTERVIEWS_LECTURES = [
   {
     title: `How standardized tests were designed by racists and eugenicists`,
     author: `Democracy Now`,
@@ -469,21 +454,14 @@ const INTERVIEWS_LECTURES = [
   },
 ];
 
-document.getElementById(
-  "interviews_lectures"
-).innerHTML = INTERVIEWS_LECTURES.map((item) => {
-  const author = item.author ? ` - ${item.author}` : ``;
-  return `<div class="item"><a class="link" href="${item.url}" target="_blank"><b>${item.title}</b>${author}</a></div>`;
-}).join("");
-
-const DOCUMENTARIES = [
+export const DOCUMENTARIES = [
   {
     title: `Black in Latin America E02, Brazil: A Racial Paradise`,
     url: `https://www.youtube.com/watch?v=Gh7c46U5hhY`,
   },
   {
     title: `The Black Panthers: Vanguard of the Revolution`,
-    url: `https://itunes.apple.com/us/movie/black-panthers-vanguard-of-the-revolution/id1052857558`
+    url: `https://itunes.apple.com/us/movie/black-panthers-vanguard-of-the-revolution/id1052857558`,
   },
   {
     title: `Slavery by Another Name`,
@@ -504,17 +482,10 @@ const DOCUMENTARIES = [
   },
   {
     title: `Jerusalem's Afro-Palestinians`,
-    url: `http://www.aparchive.com/metadata/youtube/e2fc3c7e2cf7ff46742bb1bcabd5e31d`
+    url: `http://www.aparchive.com/metadata/youtube/e2fc3c7e2cf7ff46742bb1bcabd5e31d`,
   },
   {
     title: `Louisiana State Super-max Prison Farm (Angola) - The "Alcatraz of the South"`,
-    url:
-      `https://www.dailymotion.com/video/x61j957`,
-  }
+    url: `https://www.dailymotion.com/video/x61j957`,
+  },
 ];
-
-document.getElementById(
-  "documentaries"
-).innerHTML = DOCUMENTARIES.map((item) => {
-  return `<div class="item"><a class="link" href="${item.url}" target="_blank"><b>${item.title}</b></a></div>`;
-}).join("");
