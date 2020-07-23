@@ -24,6 +24,7 @@
   color: #000;
 }
 .link:hover {
+  cursor: pointer;
   border-bottom: 3px solid #000;
 }
 
