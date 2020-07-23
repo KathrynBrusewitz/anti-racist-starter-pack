@@ -22,9 +22,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Locally generated backend app data
-pgdata
-
 # Visual Studio Code workspace files
 .vscode/*
 !.vscode/extensions.json

@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "talks",
+  "info": {
+    "name": "Talk"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "author": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

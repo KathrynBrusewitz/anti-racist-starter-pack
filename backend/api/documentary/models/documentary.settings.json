@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "documentaries",
+  "info": {
+    "name": "Documentary"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "link": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
