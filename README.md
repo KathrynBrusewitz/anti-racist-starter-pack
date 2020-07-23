@@ -37,3 +37,7 @@ To set Prettier as your default formatter and auto-format on save, create .vscod
 ```
 
 Git should ignore this file. Do not check it into source control because these are your own settings.
+
+# Deploy
+
+We use Github Actions to automate continuous integration. These are defined in .github/workflows. Currently, the `main` branch deploys generated static files to the `gh-pages` branch.
