@@ -1,14 +1,22 @@
 import React from "react";
 import "./App.css";
-import {
-  BOOKS,
-  ARTICLES,
-  PODCASTS,
-  INTERVIEWS_LECTURES,
-  DOCUMENTARIES,
-} from "./data";
+import useArspApi from "./useArspApi";
+import { Book, Article, Documentary, Podcast, Talk } from "./types";
+
+// ENDPOINTS
+const BOOKS_URL = "https://arsp-cms.herokuapp.com/books";
+const ARTICLES_URL = "https://arsp-cms.herokuapp.com/articles";
+const DOCS_URL = "https://arsp-cms.herokuapp.com/documentaries";
+const PODCASTS_URL = "https://arsp-cms.herokuapp.com/podcasts";
+const TALKS_URL = "https://arsp-cms.herokuapp.com/talks";
 
 function App() {
+  const [books] = useArspApi(BOOKS_URL);
+  const [articles] = useArspApi(ARTICLES_URL);
+  const [docs] = useArspApi(DOCS_URL);
+  const [podcasts] = useArspApi(PODCASTS_URL);
+  const [talks] = useArspApi(TALKS_URL);
+
   return (
     <div className="page">
       <h1>anti-racist starter pack</h1>
@@ -30,11 +38,12 @@ function App() {
       </div>
 
       <h2>books</h2>
-      {BOOKS.map((item) => (
-        <div className="item" key={item.title}>
+      {books.isFetching && <p>Loading books...</p>}
+      {books.data.map((item: Book) => (
+        <div className="item" key={item.id}>
           <a
             className="link"
-            href={item.url}
+            href={item.link}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -44,13 +53,14 @@ function App() {
       ))}
 
       <h2>articles</h2>
-      {ARTICLES.map((item) => {
+      {articles.isFetching && <p>Loading articles...</p>}
+      {articles.data.map((item: Article) => {
         const author = item.author ? ` by ${item.author}` : ``;
         return (
-          <div className="item" key={item.title}>
+          <div className="item" key={item.id}>
             <a
               className="link"
-              href={item.url}
+              href={item.link}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -62,13 +72,14 @@ function App() {
       })}
 
       <h2>podcasts</h2>
-      {PODCASTS.map((item) => {
+      {podcasts.isFetching && <p>Loading podcasts...</p>}
+      {podcasts.data.map((item: Podcast) => {
         const author = item.author ? ` - ${item.author}` : ``;
         return (
-          <div className="item" key={item.title}>
+          <div className="item" key={item.id}>
             <a
               className="link"
-              href={item.url}
+              href={item.link}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -80,13 +91,14 @@ function App() {
       })}
 
       <h2>interviews/lectures</h2>
-      {INTERVIEWS_LECTURES.map((item) => {
+      {talks.isFetching && <p>Loading interviews and lectures...</p>}
+      {talks.data.map((item: Talk) => {
         const author = item.author ? ` - ${item.author}` : ``;
         return (
-          <div className="item" key={item.title}>
+          <div className="item" key={item.id}>
             <a
               className="link"
-              href={item.url}
+              href={item.link}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -98,12 +110,13 @@ function App() {
       })}
 
       <h2>documentaries</h2>
-      {DOCUMENTARIES.map((item) => {
+      {docs.isFetching && <p>Loading documentaries...</p>}
+      {docs.data.map((item: Documentary) => {
         return (
-          <div className="item" key={item.title}>
+          <div className="item" key={item.id}>
             <a
               className="link"
-              href={item.url}
+              href={item.link}
               target="_blank"
               rel="noopener noreferrer"
             >
