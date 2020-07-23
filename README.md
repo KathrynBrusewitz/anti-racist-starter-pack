@@ -4,7 +4,7 @@ This project contains source files for the ARSP site (https://antiraciststarterp
 
 # Development
 
-Refer to READMEs inside /backend and /frontend directories to get started.
+Refer to READMEs inside backend/ and frontend/ directories to get started.
 
 ## Editor Setup (Optional)
 
@@ -23,4 +23,4 @@ Git should ignore this file. Do not check it into source control because these a
 
 # Deploy
 
-Github Actions are used to automate continuous integration. These are defined in .github/workflows. Currently, the `main` branch deploys generated static files from the /frontend directory to the `gh-pages` branch.
+Github Actions are used to automate continuous integration. These are defined in .github/workflows. Currently, the `main` branch deploys generated static files from the frontend/ directory to the `gh-pages` branch.
