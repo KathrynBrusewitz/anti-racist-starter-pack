@@ -1,14 +1,14 @@
-import React from "react";
-import "./App.css";
-import useArspApi from "./useArspApi";
-import { Book, Article, Documentary, Podcast, Talk } from "./types";
+import React from 'react';
+import './App.css';
+import useArspApi from './useArspApi';
+import { Book, Article, Documentary, Podcast, Talk } from './types';
 
 // ENDPOINTS
-const BOOKS_URL = "https://arsp-cms.herokuapp.com/books";
-const ARTICLES_URL = "https://arsp-cms.herokuapp.com/articles";
-const DOCS_URL = "https://arsp-cms.herokuapp.com/documentaries";
-const PODCASTS_URL = "https://arsp-cms.herokuapp.com/podcasts";
-const TALKS_URL = "https://arsp-cms.herokuapp.com/talks";
+const BOOKS_URL = 'https://arsp-cms.herokuapp.com/books';
+const ARTICLES_URL = 'https://arsp-cms.herokuapp.com/articles';
+const DOCS_URL = 'https://arsp-cms.herokuapp.com/documentaries';
+const PODCASTS_URL = 'https://arsp-cms.herokuapp.com/podcasts';
+const TALKS_URL = 'https://arsp-cms.herokuapp.com/talks';
 
 function App() {
   const [books] = useArspApi(BOOKS_URL);
@@ -18,35 +18,28 @@ function App() {
   const [talks] = useArspApi(TALKS_URL);
 
   return (
-    <div className="page">
+    <div className='page'>
       <h1>anti-racist starter pack</h1>
 
-      <div className="selectionby">
-        a selection by Danah Kowdan /{" "}
+      <div className='selectionby'>
+        a selection by Danah Kowdan /{' '}
         <a
-          className="selectionbylink"
-          href="https://www.instagram.com/danahkowdan/"
-          target="_blank"
-          rel="noopener noreferrer"
+          className='selectionbylink'
+          href='https://www.instagram.com/danahkowdan/'
+          target='_blank'
+          rel='noopener noreferrer'
         >
           @danahkowdan
         </a>
       </div>
 
-      <div className="contributionsby">
-        contributions by Jalyse Cuff and Fatima Kowdan
-      </div>
+      <div className='contributionsby'>contributions by Jalyse Cuff and Fatima Kowdan</div>
 
       <h2>books</h2>
       {books.isFetching && <p>Loading books...</p>}
       {books.data.map((item: Book) => (
-        <div className="item" key={item.id}>
-          <a
-            className="link"
-            href={item.link}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+        <div className='item' key={item.id}>
+          <a className='link' href={item.link} target='_blank' rel='noopener noreferrer'>
             <b>{item.title}</b> by {item.author}
           </a>
         </div>
@@ -57,13 +50,8 @@ function App() {
       {articles.data.map((item: Article) => {
         const author = item.author ? ` by ${item.author}` : ``;
         return (
-          <div className="item" key={item.id}>
-            <a
-              className="link"
-              href={item.link}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+          <div className='item' key={item.id}>
+            <a className='link' href={item.link} target='_blank' rel='noopener noreferrer'>
               <b>{item.title}</b>
               {author}
             </a>
@@ -76,13 +64,8 @@ function App() {
       {podcasts.data.map((item: Podcast) => {
         const author = item.author ? ` - ${item.author}` : ``;
         return (
-          <div className="item" key={item.id}>
-            <a
-              className="link"
-              href={item.link}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+          <div className='item' key={item.id}>
+            <a className='link' href={item.link} target='_blank' rel='noopener noreferrer'>
               <b>{item.title}</b>
               {author}
             </a>
@@ -95,13 +78,8 @@ function App() {
       {talks.data.map((item: Talk) => {
         const author = item.author ? ` - ${item.author}` : ``;
         return (
-          <div className="item" key={item.id}>
-            <a
-              className="link"
-              href={item.link}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+          <div className='item' key={item.id}>
+            <a className='link' href={item.link} target='_blank' rel='noopener noreferrer'>
               <b>{item.title}</b>
               {author}
             </a>
@@ -113,25 +91,15 @@ function App() {
       {docs.isFetching && <p>Loading documentaries...</p>}
       {docs.data.map((item: Documentary) => {
         return (
-          <div className="item" key={item.id}>
-            <a
-              className="link"
-              href={item.link}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+          <div className='item' key={item.id}>
+            <a className='link' href={item.link} target='_blank' rel='noopener noreferrer'>
               <b>{item.title}</b>
             </a>
           </div>
         );
       })}
 
-      <a
-        className="builtby"
-        href="https://github.com/KathrynBrusewitz"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <a className='builtby' href='https://github.com/KathrynBrusewitz' target='_blank' rel='noopener noreferrer'>
         built by @kathrynbrusewitz
       </a>
     </div>
