@@ -1,8 +1,5 @@
 {
-  // See http://go.microsoft.com/fwlink/?LinkId=827846
-  // for documentation about the extensions.json format
   "recommendations": [
-    // Prettier support
     "esbenp.prettier-vscode"
   ]
 }
