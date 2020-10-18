@@ -1,0 +1,20 @@
+.banner {
+  width: 100%;
+  color: #fff;
+  background-color: #222;
+}
+
+.banner-content {
+  padding: 15px;
+}
+
+@media (min-width: 900px) {
+  .banner-content {
+    padding: 15px 20%;
+  }
+}
+
+.banner a {
+  color: #e8e8e8;
+  font-weight: bold;
+}

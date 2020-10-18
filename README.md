@@ -29,3 +29,5 @@ Git will ignore this file. Do not check it into source control because these are
 # Deployment
 
 Continuous integration and deployment are automated by Github Actions. These are defined in `.github/workflows`. The `main` branch deploys generated static files from the frontend directory to the `gh-pages` branch.
+
+Separate deployment instructions for the API/CMS are in the backend directory.
