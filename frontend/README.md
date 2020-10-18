@@ -9,6 +9,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 1. Install dependencies: `npm install`
 2. Run the app: `npm start`
 
+When running the app locally, it requests data from the Heroku-hosted API (production).
+
 ### Other Scripts
 
 `npm test`
