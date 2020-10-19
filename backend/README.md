@@ -15,7 +15,7 @@ To rebuild the admin panel: `npm run build -- --clean`
 ## Deployment
 
 1. Log into Heroku: `heroku login`
-2. Deploy: `git push heroku main`
+2. Deploy: `git subtree push --prefix backend heroku main`
 3. To open project, run `heroku open`
 
 Full Heroku deployment instructions: https://strapi.io/documentation/v3.x/deployment/heroku.html
