@@ -10,6 +10,7 @@ const ARTICLES_URL = 'https://arsp-cms.herokuapp.com/articles';
 const DOCS_URL = 'https://arsp-cms.herokuapp.com/documentaries';
 const PODCASTS_URL = 'https://arsp-cms.herokuapp.com/podcasts';
 const TALKS_URL = 'https://arsp-cms.herokuapp.com/talks';
+const BANNER_URL = 'https://arsp-cms.herokuapp.com/banner';
 
 function App() {
   const [books] = useArspApi(BOOKS_URL);
@@ -17,10 +18,12 @@ function App() {
   const [docs] = useArspApi(DOCS_URL);
   const [podcasts] = useArspApi(PODCASTS_URL);
   const [talks] = useArspApi(TALKS_URL);
+  const [banner] = useArspApi(BANNER_URL);
 
   return (
     <div>
-      <Banner />
+      {/*@ts-ignore*/}
+      {!banner.isFetching && banner.data && <Banner markdown={banner.data['Content']} />}
       <div className='page'>
         <h1>anti-racist starter pack</h1>
 

@@ -1,14 +1,16 @@
 import React from 'react';
+import ReactMarkdown from 'react-markdown';
 import './Banner.css';
 
-function Banner() {
+interface Props {
+  markdown?: string;
+}
+
+function Banner(props: Props) {
   return (
     <div className='banner'>
       <div className={'banner-content'}>
-        November 3rd is a crucial day in the United States. Register to vote at{' '}
-        <a href='https://www.vote.org/' target='_blank' rel='noopener noreferrer'>
-          Vote.org
-        </a>
+        <ReactMarkdown>{props.markdown}</ReactMarkdown>
       </div>
     </div>
   );
