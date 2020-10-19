@@ -4,10 +4,13 @@ CMS for Anti-Racist Starter Pack (ARSP), powered by Strapi. Admin login is at ht
 
 ## Development
 
-1. Install dependencies: `npm install`
-2. Pull the latest postgres image: `docker-compose pull`
-3. Run postgres: `docker-compose up`
-4. Then run `npm run develop` (may need to run it a few times due to timeouts, etc., before it will run)
+1. Create a .env following the example provided in .env.example
+2. Install dependencies: `npm install`
+3. Pull the latest postgres image: `docker-compose pull`
+4. Run postgres: `docker-compose up`
+5. Then run `npm run develop` (may need to run it a few times due to timeouts, etc., before it will run)
+
+To rebuild the admin panel: `npm run build -- --clean`
 
 ## Deployment
 
