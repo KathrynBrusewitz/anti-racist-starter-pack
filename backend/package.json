@@ -4,8 +4,8 @@
   "version": "1.0.0",
   "description": "Strapi CMS for Anti-Racist Starter Pack (ARSP)",
   "engines": {
-    "node": ">=10.0.0",
-    "npm": ">=6.0.0"
+    "node": "15.2.1",
+    "npm": "6.14.9"
   },
   "scripts": {
     "develop": "strapi develop",
