@@ -1,0 +1,14 @@
+version: "3"
+services:
+  postgres:
+    image: postgres:12
+    environment:
+      POSTGRES_USER: strapi
+      POSTGRES_PASSWORD: strapi
+      POSTGRES_DB: strapi
+    volumes:
+      - ../pgdata:/var/lib/postgresql/data
+    ports:
+      - "27017:5432"
+volumes:
+  pgdata:

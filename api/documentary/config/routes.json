@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/documentaries",
+      "handler": "documentary.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/documentaries/count",
+      "handler": "documentary.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/documentaries/:id",
+      "handler": "documentary.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/documentaries",
+      "handler": "documentary.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/documentaries/:id",
+      "handler": "documentary.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/documentaries/:id",
+      "handler": "documentary.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

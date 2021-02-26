@@ -1,0 +1,38 @@
+{
+  "name": "arsp-cms",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Strapi CMS for Anti-Racist Starter Pack (ARSP)",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "knex": "^0.20.15",
+    "pg": "^8.2.1",
+    "sqlite3": "latest",
+    "strapi": "3.1.7",
+    "strapi-admin": "3.1.7",
+    "strapi-connector-bookshelf": "3.1.7",
+    "strapi-plugin-content-manager": "3.1.7",
+    "strapi-plugin-content-type-builder": "3.1.7",
+    "strapi-plugin-email": "3.1.7",
+    "strapi-plugin-upload": "3.1.7",
+    "strapi-plugin-users-permissions": "3.1.7",
+    "strapi-utils": "3.1.7"
+  },
+  "author": {
+    "name": "Kathryn Brusewitz"
+  },
+  "strapi": {
+    "uuid": "0e58bce5-228d-466d-91b1-2755137ab0dc"
+  },
+  "engines": {
+    "node": ">=10.0.0",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
