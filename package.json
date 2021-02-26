@@ -3,6 +3,10 @@
   "private": true,
   "version": "1.0.0",
   "description": "Strapi CMS for Anti-Racist Starter Pack (ARSP)",
+  "engines": {
+    "node": "15.2.1",
+    "npm": "6.14.9"
+  },
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
@@ -29,10 +33,6 @@
   },
   "strapi": {
     "uuid": "0e58bce5-228d-466d-91b1-2755137ab0dc"
-  },
-  "engines": {
-    "node": ">=10.0.0",
-    "npm": ">=6.0.0"
   },
   "license": "MIT"
 }
