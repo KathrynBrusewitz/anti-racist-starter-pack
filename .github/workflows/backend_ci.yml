@@ -22,9 +22,6 @@ jobs:
       - name: Deploy to backend branch
         uses: s0/git-publish-subdir-action@develop
         env:
-          ADMIN_JWT_SECRET: ${{ secrets.ADMIN_JWT_SECRET }}
-          PORT: ${{ secrets.PORT }}
-          HOST: ${{ secrets.HOST }}
           REPO: self
           BRANCH: backend
           FOLDER: backend
