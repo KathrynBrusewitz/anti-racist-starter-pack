@@ -32,6 +32,7 @@ jobs:
           HOST: ${{ secrets.HOST }}
           PORT: ${{ secrets.PORT }}
           ADMIN_JWT_SECRET: ${{ secrets.ADMIN_JWT_SECRET }}
+          CI: true
       - name: Deploy to backend branch
         uses: peaceiris/actions-gh-pages@v3
         with:
